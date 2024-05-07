@@ -1,0 +1,13 @@
+clc;
+clear;
+close all;
+t= 0:0.05:5.0;
+x_t = exp(-.8*t);
+y_t = cos(8*t);
+z_t = 10*x_t.*y_t;
+plot(t, z_t);
+title('An exponentially decaying  sinusoid');
+xlabel('Time');
+ylabel('Value of z');
+ylim([-12 12]);
+grid on;
